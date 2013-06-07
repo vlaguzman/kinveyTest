@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">	
+<title>Jquery Mobile</title>
+
+<meta name="viewport" content="width=device-width,user-scalable=no"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="https://da189i1jfloii.cloudfront.net/js/kinvey-phonegap-0.9.14.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/oauth.js"> </script>
+</head>
+
+<body>
+	<div data-role="page" data-theme="d" id="p1">
+		<div data-role="header">
+			<h1>Página interna</h1>
+			<a href="#p2">Pag 2.</a>
+		</div>
+		<div data-role="content">
+			<p>Esto es un parrafo dentro de la página</p>
+			<a id="btn-login" href="#" data-role="button" data-theme="e" data-transition="slide">  Login </a>
+			
+			<a href="a2.html" data-role="button" data-theme="a" data-inline="true"> Página externa (3) </a>
+			<a href="http://www.video2brain.com" data-role="button" rel="external"> Video 2 brain </a>
+			<a href="mailto:info@conectandomentes.com" data-role="button" rel="external"> Email </a>
+			<a href="tel:3103440710" data-role="button" rel="external"> Llamar </a>
+		</div>		
+		<div data-role="footer" class="ui-bar">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="#p2" data-icon="plus" data-theme="e">Agregar</a>
+				<a href="#p2">Eliminar</a>
+				<a href="#p2">Actualizar</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div data-role="page" data-theme="e" id="p2" data-add-back-btn="true">
+		<div data-role="header" data-theme="e">
+			<h1>Seguna página</h1>
+		</div>
+		<div data-role="content">
+			<p>Esto es un parrafo dentro de la segunda página</p>
+			<a href="#p1" data-role="button" data-theme="a" data-inline="true" data-rel="back"> Pag. Uno </a>
+			<a href="a2.html" data-role="button" data-theme="c" data-inline="true"> Dos </a>
+			
+		</div>		
+		<div data-role="footer">
+			<h4 href="http://www.conectandomentes.com">www.conectandomentes.com</h4>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
