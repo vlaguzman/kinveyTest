@@ -8,7 +8,8 @@ document.addEventListener('deviceready', function() {
 
     Kinvey.ping({
         success: function(response) {
-            alert('Kinvey Ping Success. Kinvey Service is alive, version: ' + response.version + ', response: ' + response.kinvey);
+            document.getElementById("msj").innerHTML='Kinvey Ping Success. Kinvey Service is alive, version: ' + response.version + ', response: ' + response.kinvey;
+            
                 
         },
         error: function(error) {
@@ -27,7 +28,7 @@ document.addEventListener('deviceready', function() {
         error: function(e) {
         // Failed to request a token.
         // e holds information about the nature of the error.
-            alert(e.description+ " HP en la primera");
+            document.getElementById("msj").innerHTML= e.description+ " HP en la primera";
         }
     });
 
